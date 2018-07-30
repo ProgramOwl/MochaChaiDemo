@@ -1,2 +1,0 @@
-# MochaChaiDemo
-Inclass Demo
