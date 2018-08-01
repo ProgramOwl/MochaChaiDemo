@@ -10,25 +10,26 @@ others = require('../others');
 //Chai options:chai
 //-should:
 //var should = chai.should();
-//func.should.be.a(<type>);
-//func.should.equal(ans);
-//func.should.have.lengthof(<num>);
-//func.should.have.property(<name>).with.lengthof(<num>);
+//(variable).should.be.a(<type>);
+//"Hello".should.be.a('string');
+//(variable).should.equal(ans);
+//(variable).should.have.lengthof(<num>);
+//(variable).should.have.property(<name>).with.lengthof(<num>);
 //
 //-expect: 
 //var expect = chai.expect;
-//expet(result).to.be.a(<type>);
-//expet(result).to.equal(ans);
-//expet(result).to.have.lengthof(<num>);
-//expet(result).to.have.property(<name>).with.lengthof(<num>);
+//expect(result).to.be.a(<type>);
+//expect(result).to.equal(ans);
+//expect(result).to.have.lengthof(<num>);
+//expect(result).to.have.property(<name>).with.lengthof(<num>);
 //
 //-assert:
-//var assert = chai.assert;
-//assert.typeof(func, <type>, <optional message>);
-//assert.equal(func, <ans>);
-//assert.lengthOf(func, <num>)
-//assert.property(func/val, <name>);
-//assert.lengthOf(func.<name>, <num>);
+//var assertc = chai.assert;
+//assertc.typeOf(func, <type>, <optional message>);
+//assertc.equal(func, <ans>);
+//assertc.lengthOf(func, <num>)
+//assertc.property(func/val, <name>);
+//assertc.lengthOf(func.<name>, <num>);
 
 
 function GenericTest() {
@@ -94,10 +95,15 @@ function OthersTest(){
 			it('should return 3(int)', function() {
 			  assert.equal(3, others.num3());
 			});
+//			it('should return int', function() {
+//				var resu = others.num3();
+//				assertc.typeOf(resu, 'number', "The value returned by num3 is of type: "+typeof(resu)+".");
+//				(others.num3()).should.be.a(typeof(1));
+//				expect(others.num3()).to.be.a(typeof(1));
+//			});
 		});
 	});
 }
-
 
 GenericTest();
 //IndexTest();
