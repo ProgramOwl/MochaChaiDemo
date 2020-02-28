@@ -26,7 +26,7 @@ function factorial(n){
 }
 
 function hello(){
-	return "Hello";
+	return "Hello and Good bye!";
 }
 function boo(){
 	return "Boo";
