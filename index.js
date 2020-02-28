@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res, $http) {
-	res.send("Boo!");
+	res.send("Boo testing the repo!");
 });
 
 function cap(word){
